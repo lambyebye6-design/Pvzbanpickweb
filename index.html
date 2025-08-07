@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Banpick Web</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Banpick Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Chào mừng đến Banpick Web</h1>
-  <button onclick="createRoom()">Tạo Phòng Mới</button>
+  <h1>🔥 Banpick Web</h1>
+  <button id="createRoom">Tạo phòng mới</button>
   <br><br>
-  <input type="text" id="roomId" placeholder="Nhập mã phòng">
-  <button onclick="joinRoom()">Tham gia phòng</button>
+  <input id="joinRoomId" placeholder="Nhập mã phòng..." />
+  <button id="joinRoomBtn">Tham gia phòng</button>
 
-  <script src="script.js"></script>
+  <script type="module" src="script/index.js"></script>
 </body>
 </html>
