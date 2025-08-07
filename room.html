@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phòng Banpick</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Phòng: <span id="room-name"></span></h1>
+  <p>Chọn vai trò:</p>
+  <button onclick="selectRole('blue')">Đội Xanh</button>
+  <button onclick="selectRole('red')">Đội Đỏ</button>
+  <button onclick="selectRole('spectator')">Khán Giả</button>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const room = urlParams.get('room');
+    document.getElementById('room-name').innerText = room;
+
+    function selectRole(role) {
+      alert("Bạn đã chọn: " + role);
+      // Tạm thời chỉ hiện thông báo. Sau sẽ xử lý lưu vai trò người chơi.
+    }
+  </script>
+</body>
+</html>
